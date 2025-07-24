@@ -25,6 +25,7 @@ docker run --rm \
   -v $(pwd)/output:/app/output \
   --network none \
   pdf-outliner
+```
 
 ## 💡 Notes
 
