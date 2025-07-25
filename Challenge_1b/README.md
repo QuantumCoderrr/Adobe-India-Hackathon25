@@ -3,24 +3,6 @@
 ## 📘 Overview
 An advanced PDF content extraction solution tailored for **persona-driven** scenarios. It analyzes multiple PDF collections and extracts the most relevant content based on a given **persona** and their specific **job-to-be-done**.
 
----
-
-## 🗂️ Project Structure
-Challenge_1b/
-├── Collection 1/ # Travel Planning
-│ ├── PDFs/ # South of France guides
-│ ├── challenge1b_input.json # Input configuration
-│ └── challenge1b_output.json # Output result
-├── Collection 2/ # Adobe Acrobat Learning
-│ ├── PDFs/ # Acrobat tutorials
-│ ├── challenge1b_input.json # Input configuration
-│ └── challenge1b_output.json # Output result
-├── Collection 3/ # Recipe Collection
-│ ├── PDFs/ # Cooking guides
-│ ├── challenge1b_input.json # Input configuration
-│ └── challenge1b_output.json # Output result
-└── README.md
-
 ## 📚 Collections Summary
 
 ### 🧳 Collection 1: Travel Planning
