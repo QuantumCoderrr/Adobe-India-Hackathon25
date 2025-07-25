@@ -1,49 +1,49 @@
-# Challenge 1b: Multi-Collection PDF Analysis
+# 🧠 Challenge 1b: Multi-Collection PDF Analysis
 
-## Overview
-Advanced PDF analysis solution that processes multiple document collections and extracts relevant content based on specific personas and use cases.
+## 📘 Overview
+An advanced PDF content extraction solution tailored for **persona-driven** scenarios. It analyzes multiple PDF collections and extracts the most relevant content based on a given **persona** and their specific **job-to-be-done**.
 
-## Project Structure
-```
+---
+
+## 🗂️ Project Structure
 Challenge_1b/
-├── Collection 1/                    # Travel Planning
-│   ├── PDFs/                       # South of France guides
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
-├── Collection 2/                    # Adobe Acrobat Learning
-│   ├── PDFs/                       # Acrobat tutorials
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
-├── Collection 3/                    # Recipe Collection
-│   ├── PDFs/                       # Cooking guides
-│   ├── challenge1b_input.json      # Input configuration
-│   └── challenge1b_output.json     # Analysis results
+├── Collection 1/ # Travel Planning
+│ ├── PDFs/ # South of France guides
+│ ├── challenge1b_input.json # Input configuration
+│ └── challenge1b_output.json # Output result
+├── Collection 2/ # Adobe Acrobat Learning
+│ ├── PDFs/ # Acrobat tutorials
+│ ├── challenge1b_input.json # Input configuration
+│ └── challenge1b_output.json # Output result
+├── Collection 3/ # Recipe Collection
+│ ├── PDFs/ # Cooking guides
+│ ├── challenge1b_input.json # Input configuration
+│ └── challenge1b_output.json # Output result
 └── README.md
-```
 
-## Collections
+## 📚 Collections Summary
 
-### Collection 1: Travel Planning
-- **Challenge ID**: round_1b_002
+### 🧳 Collection 1: Travel Planning
+- **Challenge ID**: `round_1b_002`
 - **Persona**: Travel Planner
-- **Task**: Plan a 4-day trip for 10 college friends to South of France
-- **Documents**: 7 travel guides
+- **Goal**: Plan a 4-day trip for 10 college friends to the South of France
+- **Docs**: 7 regional travel guides
 
-### Collection 2: Adobe Acrobat Learning
-- **Challenge ID**: round_1b_003
+### 🧾 Collection 2: Adobe Acrobat Learning
+- **Challenge ID**: `round_1b_003`
 - **Persona**: HR Professional
-- **Task**: Create and manage fillable forms for onboarding and compliance
-- **Documents**: 15 Acrobat guides
+- **Goal**: Design & manage fillable onboarding and compliance forms
+- **Docs**: 15 Adobe Acrobat tutorials
 
-### Collection 3: Recipe Collection
-- **Challenge ID**: round_1b_001
+### 🥗 Collection 3: Recipe Collection
+- **Challenge ID**: `round_1b_001`
 - **Persona**: Food Contractor
-- **Task**: Prepare vegetarian buffet-style dinner menu for corporate gathering
-- **Documents**: 9 cooking guides
+- **Goal**: Prepare a vegetarian buffet menu for a corporate dinner
+- **Docs**: 9 vegetarian recipe PDFs
 
-## Input/Output Format
+## 🔁 Input / Output Format
 
-### Input JSON Structure
+### 🔽 Input JSON
 ```json
 {
   "challenge_info": {
@@ -56,18 +56,18 @@ Challenge_1b/
 }
 ```
 
-### Output JSON Structure
+🔼 Output JSON
 ```json
 {
   "metadata": {
-    "input_documents": ["list"],
+    "input_documents": ["list of processed PDFs"],
     "persona": "User Persona",
-    "job_to_be_done": "Task description"
+    "job_to_be_done": "Task"
   },
   "extracted_sections": [
     {
       "document": "source.pdf",
-      "section_title": "Title",
+      "section_title": "Extracted Section Heading",
       "importance_rank": 1,
       "page_number": 1
     }
@@ -75,19 +75,23 @@ Challenge_1b/
   "subsection_analysis": [
     {
       "document": "source.pdf",
-      "refined_text": "Content",
+      "refined_text": "Summarized or directly relevant content",
       "page_number": 1
     }
   ]
 }
 ```
 
-## Key Features
-- Persona-based content analysis
-- Importance ranking of extracted sections
-- Multi-collection document processing
-- Structured JSON output with metadata
+## ✅ Key Features
 
----
+- 🔍 **Persona-specific section extraction**  
+  Extracts only the most relevant content tailored to the persona’s needs.
 
-**Note**: This README provides a brief overview of the Challenge 1b solution structure based on available sample data. 
+- 🏆 **Ranked content relevance (`importance_rank`)**  
+  Assigns a rank to each section based on contextual importance.
+
+- 📁 **Handles multi-PDF, multi-purpose collections**  
+  Supports diverse document types and use cases across multiple collections.
+
+- 🧾 **Schema-compliant structured output**  
+  Ensures output adheres strictly to the required JSON format.
