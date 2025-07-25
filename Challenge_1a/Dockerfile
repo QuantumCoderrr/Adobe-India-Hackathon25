@@ -1,9 +1,9 @@
-FROM --platform=linux/amd64 python:3.10
+FROM --platform=linux/amd64 python:3.9-slim
 
 WORKDIR /app
 
-# Copy the processing script
-COPY process_pdfs.py .
+COPY . .
 
-# Run the script
-CMD ["python", "process_pdfs.py"] 
+RUN pip install --no-cache-dir PyMuPDF pdfminer.six
+
+CMD ["python", "process_pdfs.py"]
